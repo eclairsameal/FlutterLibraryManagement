@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'SecondRoute.dart';
+import 'CustomArgumnets.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -19,7 +19,7 @@ class LoginPage extends StatelessWidget {
               //     context,
               //     MaterialPageRoute(builder: (context) => const SecondRoute()),
               // );
-              Navigator.pushNamed(context, '/second');
+              Navigator.pushNamed(context, '/second', arguments: CustomArgumnets('success'));
             },
           ),
         )

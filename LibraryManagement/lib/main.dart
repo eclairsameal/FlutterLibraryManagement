@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'login/SecondRoute.dart';
 import 'login/login_page.dart';
 
 void main() {
@@ -17,6 +18,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false, // 去除右上方Debug標誌
+      initialRoute: '/loginpage',
+      routes: {
+        '/loginpage': (context) => LoginPage(),
+        '/second': (context) => SecondRoute()
+      },
       home: LoginPage(),
     );
   }

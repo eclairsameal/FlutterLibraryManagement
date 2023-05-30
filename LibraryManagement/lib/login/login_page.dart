@@ -15,10 +15,11 @@ class LoginPage extends StatelessWidget {
           child: ElevatedButton(
             child: const Text('Login Page'),
             onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SecondRoute()),
-              );
+              // Navigator.push(
+              //     context,
+              //     MaterialPageRoute(builder: (context) => const SecondRoute()),
+              // );
+              Navigator.pushNamed(context, '/second');
             },
           ),
         )

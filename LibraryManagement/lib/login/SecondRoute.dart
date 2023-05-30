@@ -13,7 +13,8 @@ class SecondRoute extends StatelessWidget {
         child: ElevatedButton(
           onPressed: () {
             // Navigate back to first route when tapped.
-            Navigator.pop(context);
+            // Navigator.pop(context);
+            Navigator.pushNamed(context, '/loginpage');
           },
           child: const Text('Go back!'),
         ),
